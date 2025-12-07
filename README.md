@@ -61,7 +61,7 @@ Assurez-vous d'avoir installé les outils suivants :
 ### 1. Cloner le projet
 
 ```bash
-git clone <url-du-repo>
+git clone https://github.com/MohamedAmineZinabi/flutter-ethereum-blockchain.git
 cd hello_world
 ```
 
