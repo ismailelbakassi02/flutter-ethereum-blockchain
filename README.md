@@ -51,33 +51,34 @@ hello_world/
 
 Assurez-vous d'avoir installé les outils suivants :
 
-- [Flutter SDK](https://flutter.dev/docs/get-started/install) (>=2.17.0 <4.0.0)
-- [Node.js](https://nodejs.org/) (v14 ou supérieur)
-- [Truffle](https://trufflesuite.com/docs/truffle/getting-started/installation/) : `npm install -g truffle`
-- [Ganache](https://trufflesuite.com/ganache/) : Blockchain locale
+- **Flutter SDK** (>=2.17.0 <4.0.0)
+- **Node.js** (v14 ou supérieur)
+- **Truffle** : `npm install -g truffle`
+- **Ganache** : Blockchain locale
 
 ## 🚀 Installation et Démarrage
 
 ### 1. Cloner le projet
 
 ```bash
-git clone https://github.com/MohamedAmineZinabi/flutter-ethereum-blockchain.git
-cd hello_world
+git clone https://github.com/ismailelbakassi02/flutter-ethereum-blockchain.git
+cd flutter-ethereum-blockchain
 ```
 
 ### 2. Installer les dépendances Flutter
 
-```powershell
+```bash
 flutter pub get
 ```
 
 ### 3. Démarrer Ganache
 
-Lancez Ganache sur le port **7545** :
-- Via l'interface graphique : Créez un nouveau workspace
-- Ou via CLI : `ganache-cli -p 7545`
+Lancez Ganache sur le port 7545 :
 
-> **Important** : Notez l'adresse du premier compte et sa clé privée affichées dans Ganache.
+- **Via l'interface graphique** : Créez un nouveau workspace
+- **Ou via CLI** : `ganache-cli -p 7545`
+
+**Important** : Notez l'adresse du premier compte et sa clé privée affichées dans Ganache.
 
 ### 4. Configurer la clé privée
 
@@ -91,7 +92,7 @@ Remplacez par la clé privée du premier compte Ganache.
 
 ### 5. Compiler et déployer le smart contract
 
-```powershell
+```bash
 truffle compile
 truffle migrate --reset
 ```
@@ -104,12 +105,13 @@ Après le déploiement, vérifiez que l'adresse dans `build/contracts/HelloWorld
 
 ### 7. Lancer l'application Flutter
 
-```powershell
+```bash
 flutter run
 ```
 
 Ou pour un appareil spécifique :
-```powershell
+
+```bash
 flutter run -d windows    # Windows
 flutter run -d chrome     # Web
 flutter run -d <device-id> # Mobile
@@ -117,14 +119,14 @@ flutter run -d <device-id> # Mobile
 
 ## 🎮 Utilisation
 
-1. Au lancement, l'application affiche "Hello Med Amine" (valeur par défaut du contrat)
+1. Au lancement, l'application affiche **"Hello Med Amine"** (valeur par défaut du contrat)
 2. Entrez un nouveau nom dans le champ de texte
-3. Cliquez sur "Set Name" pour écrire sur la blockchain
+3. Cliquez sur **"Set Name"** pour écrire sur la blockchain
 4. Le nom s'actualise automatiquement après la transaction
 
 ## 🔍 Détails Techniques
 
-### Smart Contract (`HelloWorld.sol`)
+### Smart Contract (HelloWorld.sol)
 
 ```solidity
 contract HelloWorld {
@@ -151,7 +153,7 @@ contract HelloWorld {
 
 Pour exécuter les tests du smart contract :
 
-```powershell
+```bash
 truffle test
 ```
 
@@ -167,12 +169,16 @@ truffle test
 
 ### Contrat non déployé
 - Exécutez `truffle migrate --reset` pour redéployer
-- Vérifiez que le network_id dans le fichier JSON correspond à 5777
-
-## 📝 Auteur
-
-**Mohamed Amine Zinabi**
+- Vérifiez que le `network_id` dans le fichier JSON correspond à 5777
 
 ## 📄 Licence
 
-Ce projet est un exemple éducatif de DApp Flutter-Ethereum.
+Ce projet est open source et disponible sous licence MIT.
+
+## 👥 Contributeurs
+
+- **Ismail El Bakassi** - [@ismailelbakassi02](https://github.com/ismailelbakassi02)
+
+## 🤝 Contribution
+
+Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou soumettre une pull request.
