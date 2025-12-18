@@ -119,7 +119,7 @@ flutter run -d <device-id> # Mobile
 
 ## 🎮 Utilisation
 
-1. Au lancement, l'application affiche **"Hello Med Amine"** (valeur par défaut du contrat)
+1. Au lancement, l'application affiche **"Hello Ismail El Bakassi"** (valeur par défaut du contrat)
 2. Entrez un nouveau nom dans le champ de texte
 3. Cliquez sur **"Set Name"** pour écrire sur la blockchain
 4. Le nom s'actualise automatiquement après la transaction
@@ -129,11 +129,14 @@ flutter run -d <device-id> # Mobile
 ### Smart Contract (HelloWorld.sol)
 
 ```solidity
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.21;
+
 contract HelloWorld {
     string public yourName;
     
-    constructor() public {
-        yourName = "Med Amine";
+    constructor() {
+        yourName = "Ismail El Bakassi";
     }
     
     function setName(string memory nm) public {

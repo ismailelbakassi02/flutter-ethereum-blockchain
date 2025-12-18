@@ -1,8 +1,9 @@
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.21;
 contract HelloWorld {
     string public yourName;
-    constructor() public {
-        yourName = "Med Amine";
+    constructor() {
+        yourName = "Ismail El Bakassi";
     }
     function setName(string memory nm) public{
          yourName = nm ;
