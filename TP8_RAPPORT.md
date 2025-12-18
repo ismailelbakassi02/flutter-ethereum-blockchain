@@ -1,19 +1,19 @@
 # TP8 - Blockchain et Application Décentralisée DAPP
 ## Projet Complet - Prêt pour Soumission
 
-### ✅ Travail Réalisé
+### Travail Réalisé
 
-#### 1. Configuration de l'Environnement ✅
+#### 1. Configuration de l'Environnement
 - Node.js v24.11.1 installé
 - Truffle v5.11.5 installé et configuré
 - Ganache configuré sur le port 7545
 
-#### 2. Création du Projet ✅
+#### 2. Création du Projet
 - Projet Flutter créé
 - Truffle initialisé avec `truffle init`
 - Structure de répertoires correcte
 
-#### 3. Smart Contract (HelloWorld.sol) ✅
+#### 3. Smart Contract (HelloWorld.sol)
 ```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.21;
@@ -31,17 +31,17 @@ contract HelloWorld {
 }
 ```
 
-#### 4. Compilation ✅
+#### 4. Compilation
 - Compilé avec succès sans erreurs ni avertissements
 - Artifacts générés dans `build/contracts/`
 
-#### 5. Migration et Déploiement ✅
+#### 5. Migration et Déploiement
 - Script de migration créé: `2_deploy_contracts.js`
 - Contrat déployé sur Ganache (réseau 5777)
 - Adresse du contrat: `0xbcCd6B72b5A5AEDBD1DAae1B6CA7535b121E730a`
 - Transaction hash: `0x36f05e0e89a89c9bb72d9ef0a26ec7c5d697152d0dc2ffbeac930af04b9b3ff2`
 
-#### 6. Tests ✅
+#### 6. Tests
 ```
 Contract: HelloWorld
   ✔ Hello World Testing (73ms)
@@ -49,27 +49,27 @@ Contract: HelloWorld
 1 passing (99ms)
 ```
 
-#### 7. Configuration Truffle ✅
+#### 7. Configuration Truffle
 - Port: 7545 (Ganache GUI)
 - Network ID: * (any)
 - Solidity: 0.8.21
 - EVM Version: berlin
 
-#### 8. Intégration Flutter ✅
+#### 8. Intégration Flutter
 - `pubspec.yaml` configuré avec toutes les dépendances:
   - provider: ^6.0.0
   - web3dart: 2.3.5
   - http: ^0.13.6
   - web_socket_channel: ^2.4.0
 
-#### 9. Liaison avec le Contrat (contract_linking.dart) ✅
+#### 9. Liaison avec le Contrat (contract_linking.dart)
 - Connexion Web3 configurée
 - RPC URL: http://127.0.0.1:7545
 - WebSocket URL: ws://127.0.0.1:7545/
 - Clé privée configurée
 - Fonctions `getName()` et `setName()` implémentées
 
-#### 10. Interface Utilisateur (helloUI.dart) ✅
+#### 10. Interface Utilisateur (helloUI.dart)
 - Affichage "Hello [nom]"
 - Champ de saisie pour le nom
 - Bouton "Set Name"
@@ -78,7 +78,7 @@ Contract: HelloWorld
 
 ---
 
-## 📊 Résultats de Déploiement
+## Résultats de Déploiement
 
 ### Informations du Compte Ganache
 - **Adresse**: `0x38A161D7D5f14f299c7129626a16b310912e24db`
@@ -95,57 +95,57 @@ Contract: HelloWorld
 
 ---
 
-## 📁 Structure du Projet
+## Structure du Projet
 
 ```
 flutter-ethereum-blockchain/
 ├── contracts/
-│   └── HelloWorld.sol              ✅ Smart contract
+│   └── HelloWorld.sol              # Smart contract
 ├── migrations/
-│   ├── 1_initial_migration.js      ✅ Migration initiale
-│   └── 2_deploy_contracts.js       ✅ Déploiement HelloWorld
+│   ├── 1_initial_migration.js      # Migration initiale
+│   └── 2_deploy_contracts.js       # Déploiement HelloWorld
 ├── lib/
-│   ├── main.dart                   ✅ Point d'entrée
-│   ├── contract_linking.dart       ✅ Connexion Web3
-│   └── helloUI.dart                ✅ Interface utilisateur
+│   ├── main.dart                   # Point d'entrée
+│   ├── contract_linking.dart       # Connexion Web3
+│   └── helloUI.dart                # Interface utilisateur
 ├── test/
-│   └── helloWorld.js               ✅ Tests (1/1 réussi)
+│   └── helloWorld.js               # Tests (1/1 réussi)
 ├── build/
 │   └── contracts/
-│       └── HelloWorld.json         ✅ ABI et métadonnées
-├── truffle-config.js               ✅ Configuration Truffle
-├── pubspec.yaml                    ✅ Dépendances Flutter
-├── README.md                       ✅ Documentation
-├── SETUP_GUIDE.md                  ✅ Guide d'installation
-└── FLUTTER_INSTALL_GUIDE.md        ✅ Guide Flutter
+│       └── HelloWorld.json         # ABI et métadonnées
+├── truffle-config.js               # Configuration Truffle
+├── pubspec.yaml                    # Dépendances Flutter
+├── README.md                       # Documentation
+├── SETUP_GUIDE.md                  # Guide d'installation
+└── FLUTTER_INSTALL_GUIDE.md        # Guide Flutter
 ```
 
 ---
 
-## 🎯 Conformité avec le TP8
+## Conformité avec le TP8
 
 | Exigence TP8 | Statut | Notes |
 |--------------|--------|-------|
-| Installation Truffle | ✅ | v5.11.5 |
-| Installation Ganache | ✅ | Port 7545 |
-| Création projet Flutter | ✅ | Complet |
-| Initialisation Truffle | ✅ | `truffle init` |
-| Smart Contract HelloWorld.sol | ✅ | Solidity 0.8.21 |
-| Variable `yourName` | ✅ | Type string public |
-| Constructeur | ✅ | Initialise à "Ismail El Bakassi" |
-| Fonction `setName()` | ✅ | Implémentée |
-| Compilation | ✅ | Sans erreurs |
-| Migration | ✅ | Déployé sur Ganache |
-| Tests | ✅ | 1/1 réussi |
-| Configuration truffle-config.js | ✅ | Port 7545, Solidity 0.8.21 |
-| Dépendances Flutter | ✅ | Toutes installées |
-| contract_linking.dart | ✅ | Web3 configuré |
-| helloUI.dart | ✅ | Interface complète |
-| main.dart | ✅ | Provider configuré |
+| Installation Truffle | OK | v5.11.5 |
+| Installation Ganache | OK | Port 7545 |
+| Création projet Flutter | OK | Complet |
+| Initialisation Truffle | OK | `truffle init` |
+| Smart Contract HelloWorld.sol | OK | Solidity 0.8.21 |
+| Variable `yourName` | OK | Type string public |
+| Constructeur | OK | Initialise à "Ismail El Bakassi" |
+| Fonction `setName()` | OK | Implémentée |
+| Compilation | OK | Sans erreurs |
+| Migration | OK | Déployé sur Ganache |
+| Tests | OK | 1/1 réussi |
+| Configuration truffle-config.js | OK | Port 7545, Solidity 0.8.21 |
+| Dépendances Flutter | OK | Toutes installées |
+| contract_linking.dart | OK | Web3 configuré |
+| helloUI.dart | OK | Interface complète |
+| main.dart | OK | Provider configuré |
 
 ---
 
-## 📝 Pour le Rapport TP8
+## Pour le Rapport TP8
 
 ### Captures d'écran à Inclure
 
@@ -198,7 +198,7 @@ HelloWorld.sol (Smart Contract)
 
 ---
 
-## 🚀 Instructions pour Tester (Optionnel)
+## Instructions pour Tester (Optionnel)
 
 Si le professeur veut tester votre projet:
 
@@ -234,23 +234,23 @@ Si le professeur veut tester votre projet:
 
 ---
 
-## ✅ Conclusion
+## Conclusion
 
 **Projet TP8 - COMPLET**
 
 Tous les objectifs du TP8 ont été atteints:
-- ✅ Environnement de développement configuré
-- ✅ Smart contract créé et déployé
-- ✅ Tests réussis
-- ✅ Application Flutter intégrée avec Web3
-- ✅ Interface utilisateur fonctionnelle
-- ✅ Documentation complète
+- Environnement de développement configuré
+- Smart contract créé et déployé
+- Tests réussis
+- Application Flutter intégrée avec Web3
+- Interface utilisateur fonctionnelle
+- Documentation complète
 
 **Le code est prêt pour soumission sur GitHub!**
 
 ---
 
-## 📦 Dépôt GitHub
+## Dépôt GitHub
 
 **URL:** https://github.com/ismailelbakassi02/flutter-ethereum-blockchain
 
